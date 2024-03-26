@@ -36,7 +36,7 @@ const suitIcon = computed(() => {
 </script>
 
 <template>
-  <div class="group perspective min-h-[180px] min-w-[120px]">
+  <div class="group perspective lg:min-h-[180px] lg:min-w-[120px] md:min-h-[120px] md:min-w-[80px]">
     <div class="relative preserve-3d w-full h-full duration-1000" :class="{'rotate-y-180': isFlipped}">
       <div class="absolute rotate-y-180 backface-hidden w-full h-full overflow-hidden bg-white rounded-lg p-4 shadow-md" :class="{'text-red-600': isRedSuit, 'text-black': isBlackSuit }">
         <div class="flex justify-between">
